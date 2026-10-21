@@ -48,12 +48,14 @@ class AuthorizationEntity implements
     }
 
     /** @return int */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->servicePrivileges);
     }
 
     /** @return ArrayIterator */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new ArrayIterator($this->servicePrivileges);
