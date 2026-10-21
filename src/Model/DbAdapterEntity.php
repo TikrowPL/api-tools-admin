@@ -9,6 +9,12 @@ use function strtolower;
 
 class DbAdapterEntity
 {
+    /** @var string */
+    public $name;
+
+    /** @var array<string, mixed> */
+    public $config;
+
     /**
      * @param string $name
      * @param array<string, mixed> $config
